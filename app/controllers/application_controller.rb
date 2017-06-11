@@ -19,18 +19,28 @@ class ApplicationController < ActionController::API
     best_smiles = [
       {
         "id" => "1",
-        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile1.jpg",
-        "score" => "90"
+        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile_h1.jpg",
+        "score" => "100"
       },
       {
         "id" => "2",
-        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile2.jpg",
-        "score" => "92"
+        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile_h2.jpg",
+        "score" => "100"
       },
       {
         "id" => "3",
-        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile3.jpg",
-        "score" => "80"
+        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile_h3.jpg",
+        "score" => "97.8"
+      },
+      {
+        "id" => "4",
+        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile_h4.jpg",
+        "score" => "100"
+      },
+      {
+        "id" => "5",
+        "image_url" => "https://s3-ap-northeast-1.amazonaws.com/takeuchi.test.jp/smile/smile_h5.jpg",
+        "score" => "100"
       }
     ]
     return best_smiles.sample(1)
