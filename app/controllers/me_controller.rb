@@ -1,7 +1,9 @@
 class MeController < ApplicationController
 
-  def smile_score
-    image_url = params[:url]
+=begin
+
+  def smile_score(image_url)
+#    image_url = params[:url]
     uri = URI("#{ENV["FACEAPI_URL"]}")
     # 笑顔度等を取得
     uri.query = URI.encode_www_form({
@@ -19,6 +21,10 @@ class MeController < ApplicationController
     end
     data = JSON.parse(response.body)
     smile_rate = data[0]["faceAttributes"]["smile"] * 100
-    render json: { smile_rate: smile_rate }.to_json
+    return smile_rate
+#    render json: { smile_rate: smile_rate }.to_json
   end
+
+=end
+
 end
